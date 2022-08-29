@@ -1,0 +1,65 @@
+// only for this component
+$testimonialColor: #686de0;
+$testimonialBackground: #c3cfe2;
+
+// component
+.testimonial {
+  font-family: "Montserrat";
+  background-color: $testimonialBackground;
+  padding: $padding;
+  margin: 0 auto;
+  height: 100%;
+
+  main {
+    background-color: $color;
+    border: solid $color;
+    border-top-left-radius: $borderRadius;
+    border-top-right-radius: $borderRadius;
+    padding: $padding $padding 102px;
+    color: grey;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  main p {
+    margin: 0;
+    padding: 0 0 $padding;
+  }
+
+  footer {
+    background-color: $testimonialColor;
+    border-bottom-left-radius: $borderRadius;
+    border-bottom-right-radius: $borderRadius;
+    border: solid $testimonialColor;
+    text-align: center;
+    color: $color;
+    position: relative;
+    min-height: 104px;
+    padding-top: 100px;
+    padding-bottom: $padding;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    padding: 0;
+  }
+
+  footer p {
+    font-size: 16px;
+    color: $testimonialBackground;
+    margin: 0 0 12px;
+    padding: 0;
+  }
+
+  .suvik {
+    border-radius: 100px;
+    border: solid 7px $color;
+    position: absolute;
+    left: 50%;
+    top: -75px;
+    width: 150px;
+    margin-left: -80px;
+  }
+}

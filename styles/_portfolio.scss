@@ -1,0 +1,54 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(7, 100vw);
+  justify-content: center;
+  grid-gap: $padding;
+  padding-top: $padding;
+
+  .item {
+    position: relative;
+
+    &:hover {
+      button {
+        display: block;
+      }
+
+      .suvi {
+        opacity: 0;
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .suvi,
+  .blue {
+    position: absolute;
+    width: 100%;
+    border-radius: $borderRadius;
+    box-sizing: border-box;
+  }
+
+  button {
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 40%;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 50vw);
+  }
+
+  @media (min-width: 1000px) {
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(3, 30vw);
+    justify-content: center;
+  }
+}

@@ -1,0 +1,235 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #c3cfe2;
+}
+
+.testimonial {
+  font-family: "Montserrat";
+  background-color: #c3cfe2;
+  padding: 24px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.testimonial main {
+  background-color: white;
+  border: solid white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 24px 24px 102px;
+  color: grey;
+  font-size: 24px;
+  line-height: 160%;
+}
+
+.testimonial main p {
+  margin: 0;
+  padding: 0 0 24px;
+}
+
+.testimonial footer {
+  background-color: #686de0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: solid #686de0;
+  text-align: center;
+  color: white;
+  position: relative;
+  min-height: 104px;
+  padding-top: 100px;
+  padding-bottom: 24px;
+}
+
+.testimonial h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.testimonial footer p {
+  font-size: 16px;
+  color: #c3cfe2;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.testimonial .suvik {
+  border-radius: 100px;
+  border: solid 7px white;
+  position: absolute;
+  left: 50%;
+  top: -75px;
+  width: 150px;
+  margin-left: -80px;
+}
+
+.portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: (100vw)[7];
+      grid-template-rows: repeat(7, 100vw);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 24px;
+  padding-top: 24px;
+}
+
+.portfolio .item {
+  position: relative;
+}
+
+.portfolio .item:hover button {
+  display: block;
+}
+
+.portfolio .item:hover .suvi {
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.portfolio .suvi,
+.portfolio .blue {
+  position: absolute;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.portfolio button {
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 40%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: (50vw)[4];
+        grid-template-rows: repeat(4, 50vw);
+  }
+}
+
+@media (min-width: 1000px) {
+  .portfolio {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+    grid-template-columns: repeat(3, 30vw);
+    -ms-grid-rows: (30vw)[3];
+        grid-template-rows: repeat(3, 30vw);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.social-media {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-media a {
+  display: inline-block;
+}
+
+.social-media .blog {
+  background-color: #e17b77;
+}
+
+.social-media .facebook {
+  background-color: #3b5998;
+}
+
+.social-media .twitter {
+  background-color: #00aced;
+}
+
+.social-media .github {
+  background-color: #333;
+}
+
+.social-media .linkedin {
+  background-color: #007bb6;
+}
+
+.social-media .button {
+  position: relative;
+  max-width: 38px;
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+.social-media .button:hover {
+  max-width: 500px;
+}
+
+.social-media .text {
+  display: inline-block;
+  padding-right: 24px;
+  color: white;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.social-media .text::before {
+  font-family: fontAwesome;
+  display: inline-block;
+  padding: 12px 30px 12px 12px;
+}
+
+.social-media .fa-laptop-code::before {
+  content: "\f5fc";
+}
+
+.social-media .fa-twitter::before {
+  content: "\f099";
+}
+
+.social-media .fa-linkedin::before {
+  content: "\f0e1";
+}
+
+.social-media .fa-facebook::before {
+  content: "\f39e";
+}
+
+.social-media .fa-github::before {
+  content: "\f09b";
+}
+/*# sourceMappingURL=style.css.map */

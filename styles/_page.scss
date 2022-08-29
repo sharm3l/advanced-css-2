@@ -1,0 +1,8 @@
+body,
+html {
+  @include reset();
+}
+
+body {
+  background-color: $backgroundColor;
+}
